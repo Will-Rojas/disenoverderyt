@@ -252,6 +252,17 @@ nav.nav-scrolled {
   white-space: nowrap;
 }
 
+.mobile-toggle {
+  display: none;
+  /* Oculto en escritorio */
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 /* Responsivo para Navbar */
 @media (max-width: 1024px) {
   .navbar-container {
@@ -270,48 +281,103 @@ nav.nav-scrolled {
 
 @media (max-width: 768px) {
   nav {
-    padding: 12px 0;
+    padding: 10px 0;
   }
 
   .navbar-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    justify-content: space-between !important;
+    gap: 0;
   }
 
-  .navbar-logo {
+  .nav-links-wrapper {
+    position: fixed;
+    top: 70px;
+    left: 0;
     width: 100%;
-    justify-content: center;
+    height: 0;
+    background: white;
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 999;
   }
 
-  .navbar-logo__img {
-    height: 50px;
+  .nav-links-wrapper.active {
+    height: 350px;
+    /* Altura suficiente para los links */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .nav-links {
-    order: 3;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    color: var(--primary-dark);
     width: 100%;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Ocultar texto "Cotizar" en móvil para ahorrar espacio */
+  .cta-text {
+    display: none;
   }
 
   .navbar-cta {
-    order: 2;
+    padding: 10px !important;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
   }
 
+  .navbar-cta svg {
+    margin-right: 0 !important;
+  }
+
+  .mobile-toggle {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--primary-dark);
+    cursor: pointer;
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+  }
+
+  /* Ajustes Hero Mobile */
   section {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
+  .navbar-logo__img {
+    height: 45px;
+    /* Logo más pequeño en móvil */
   }
 }
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
 
 /* --- Animaciones de Scroll --- */
 .reveal {

@@ -54,6 +54,7 @@ const CoverageBanner = () => (
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,9 +65,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={scrolled ? 'nav-scrolled' : ''}>
+    <nav className={`${scrolled ? 'nav-scrolled' : ''} ${menuOpen ? 'nav-open' : ''}`}>
       <div className="container navbar-container">
-        <a href="#inicio" className="navbar-logo">
+
+        {/* Logo */}
+        <a href="#inicio" className="navbar-logo" onClick={() => setMenuOpen(false)}>
           <img
             src="/img/logo-ryt-transparent.png"
             alt="R&T Diseño Verde"
@@ -74,21 +77,34 @@ const Navbar = () => {
           />
         </a>
 
-        {/* Links de Navegación */}
-        <div className="nav-links">
-          <a href="#inicio">Inicio</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#tipos-zacate">Variedades</a>
-          <a href="#cobertura">Cobertura</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+        {/* Desktop Links + Mobile Overlay */}
+        <div className={`nav-links-wrapper ${menuOpen ? 'active' : ''}`}>
+          <div className="nav-links">
+            <a href="#inicio" onClick={() => setMenuOpen(false)}>Inicio</a>
+            <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</a>
+            <a href="#tipos-zacate" onClick={() => setMenuOpen(false)}>Variedades</a>
+            <a href="#cobertura" onClick={() => setMenuOpen(false)}>Cobertura</a>
+            <a href="#proyectos" onClick={() => setMenuOpen(false)}>Proyectos</a>
+            <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
+          </div>
         </div>
 
-        {/* CTA WhatsApp */}
-        <a href={siteData.whatsapp} onClick={trackWhatsAppClick} className="btn btn-primary navbar-cta">
-          <MessageCircle size={18} style={{ marginRight: '8px' }} />
-          Cotizar
-        </a>
+        {/* Right Side: CTA + Hamburger */}
+        <div className="navbar-actions">
+          <a href={siteData.whatsapp} onClick={trackWhatsAppClick} className="btn btn-primary navbar-cta">
+            <MessageCircle size={18} style={{ marginRight: '8px' }} />
+            <span className="cta-text">Cotizar</span>
+          </a>
+
+          <button
+            className="mobile-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menu"
+          >
+            {menuOpen ? '✕' : '☰'}
+          </button>
+        </div>
+
       </div>
     </nav>
   );

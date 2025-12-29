@@ -66,8 +66,8 @@ export const siteData = {
     {
       id: "jengibrillo",
       name: "Jengibrillo",
-      ideal: "Bajo mantenimiento",
-      desc: "Excelente para áreas de poco tránsito y bajo mantenimiento.",
+      ideal: "Alto tránsito",
+      desc: "Excelente para áreas de alto tránsito y bajo mantenimiento.",
       advantages: "Rústico y muy resistente.",
       image: "/img/jengibrillo.jpg"
     }
@@ -76,7 +76,7 @@ export const siteData = {
   services: [
     {
       id: "preparacion-pro",
-      title: "Preparación Pro",
+      title: "Preparación",
       icon: "settings", // Se usará para mapear a Lucide icons
       desc: "Movimiento de tierra, nivelación y suministro de tierra vegetal.",
       items: ["Preparación técnica de suelo", "Suministro de tierra vegetal seleccionada", "Garantía de nivelación funcional"],
@@ -94,7 +94,7 @@ export const siteData = {
       id: "vivero-domicilio",
       title: "Vivero a domicilio",
       icon: "truck",
-      desc: "Plataneras, plantas ornamentales y frutales entregadas en su puerta.",
+      desc: "Plantas ornamentales y frutales entregadas en su puerta.",
       items: ["Ornamentales", "Frutales", "Asesoría botánica"],
       category: "prep-design"
     },
