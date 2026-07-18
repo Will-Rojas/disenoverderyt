@@ -35,7 +35,7 @@ export const siteData = {
       id: "san-agustin",
       name: "Zacate San Agustín",
       ideal: "Sol fuerte",
-      desc: "Ideal para sol fuerte, resistente y de color intenso.",
+      desc: "Ideal para sol fuerte, resistente y de color intenso .",
       advantages: "Resistente, cubre rápido, color verde intenso.",
       image: "/img/san-agustin.jpg"
     },
@@ -54,7 +54,7 @@ export const siteData = {
       desc: "Variedad altamente resistente al tráfico y de rápida recuperación, perfecta para zonas deportivas o de mucho uso.",
       advantages: "Gran resistencia y rápida regeneración.",
       image: "/img/zacate-bermuda.jpg"
-    },
+    },      
     {
       id: "zoysia-toro",
       name: "Zoysia Toro",

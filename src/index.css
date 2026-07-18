@@ -219,6 +219,8 @@ nav.nav-scrolled {
   color: var(--text-main);
   white-space: nowrap;
   transition: color 0.2s;
+  padding:18px 0;
+  border-bottom:1px solid #eee;
   font-size: 0.95rem;
   position: relative;
 }
@@ -291,21 +293,25 @@ nav.nav-scrolled {
 
   .nav-links-wrapper {
     position: fixed;
-    top: 70px;
+    top: 68px;
     left: 0;
     width: 100%;
     height: 0;
     background: white;
     overflow: hidden;
-    transition: height 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity:0;
+    transform:translateY(-20px);
+    transition:.35s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     z-index: 999;
   }
 
   .nav-links-wrapper.active {
-    height: 350px;
+    height: 320px;  
     /* Altura suficiente para los links */
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    opacity:1;
+    transform:translateY(0);
   }
 
   .nav-links {
@@ -346,18 +352,27 @@ nav.nav-scrolled {
     margin-right: 0 !important;
   }
 
-  .mobile-toggle {
-    display: block !important;
-    background: none;
-    border: none;
-    font-size: 28px;
-    line-height: 1;
-    color: var(--primary-dark);
-    cursor: pointer;
-    padding: 5px;
-    width: 40px;
-    text-align: center;
-  }
+.mobile-toggle{
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.97);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    cursor:pointer;
+    font-size:26px;
+    color:var(--primary-dark);
+    transition:.3s;
+}
+
+.mobile-toggle:hover{
+    background:var(--accent);
+    transform:scale(1.05);
+}
 
   /* Ajustes Hero Mobile */
   section {
