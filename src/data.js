@@ -176,7 +176,7 @@ export const siteData = {
       desc: "De un espacio sencillo a un jardín con carácter, gracias a un diseño integral de áreas verdes y ornato profesional.",
       services: ["Renovación de jardín", "Paisajismo", "Zacate"],
       before: "/img/patio-despues.webp",
-      after: "/img/patio-antes.webp",
+      after: "/img/patio-antes-remastered.png",
     },
   ],
 };
