@@ -157,8 +157,8 @@ export const siteData = {
       location: "León XIII, San José",
       desc: "Instalación masiva de zacate San Agustín y paisajismo integral realizado en áreas recreativas.",
       services: ["Paisajismo", "Instalación de zacate", "Áreas recreativas"],
-      before: "../public/img/Leon-XIII-despues-1.webp", //Despues
-      after: "../public/img/Leon-XIII-Antes-1.webp", //Antes
+      before: "/img/Leon-XIII-despues-1.webp", //Despues
+      after: "/img/Leon-XIII-Antes-1.webp", //Antes
     },
     {
       title: "Remodelación Residencial",
@@ -166,8 +166,8 @@ export const siteData = {
       location: "Costa Rica",
       desc: "Transformación completa de patio residencial con diseño de áreas verdes y ornato profesional.",
       services: ["Renovación de jardín", "Paisajismo", "Zacate"],
-      before: "../public/img/casa-despues.jpeg",
-      after: "../public/img/casa-antes.jpeg",
+      before: "/img/casa-despues.jpeg",
+      after: "/img/casa-antes.jpeg",
     },
     {
       title: "Remodelación patio",
@@ -175,8 +175,8 @@ export const siteData = {
       location: "Costa Rica",
       desc: "De un espacio sencillo a un jardín con carácter, gracias a un diseño integral de áreas verdes y ornato profesional.",
       services: ["Renovación de jardín", "Paisajismo", "Zacate"],
-      before: "../public/img/patio-despues.webp",
-      after: "../public/img/patio-antes.webp",
+      before: "/img/patio-despues.webp",
+      after: "/img/patio-antes.webp",
     },
   ],
 };
