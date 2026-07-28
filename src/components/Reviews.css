@@ -1,0 +1,180 @@
+.reviews {
+  padding: 90px 20px;
+
+  background: #f7faf7;
+}
+
+.reviews-container {
+  max-width: 1300px;
+
+  margin: auto;
+}
+
+.reviews-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.reviews-badge {
+  background: #2e7d32;
+
+  color: white;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.reviews-header h2 {
+  margin-top: 20px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  color: #1b4332;
+}
+
+.reviews-header p {
+  max-width: 650px;
+
+  margin: 20px auto;
+
+  color: #666;
+}
+
+.google-rating {
+  background: white;
+
+  max-width: 350px;
+
+  margin: 0 auto 60px;
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.rating-stars {
+  color: #ffc107;
+
+  font-size: 2rem;
+
+  letter-spacing: 5px;
+}
+
+.google-rating h3 {
+  font-size: 4rem;
+
+  margin: 15px 0;
+
+  color: #2e7d32;
+}
+
+.reviews-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 30px;
+}
+
+.reviews-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  margin-top: 60px;
+
+  flex-wrap: wrap;
+}
+
+.google-btn,
+.review-btn {
+  padding: 15px 30px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.google-btn {
+  background: #2e7d32;
+
+  color: white;
+}
+
+.google-btn:hover {
+  background: #256428;
+}
+
+.review-btn {
+  border: 2px solid #2e7d32;
+
+  color: #2e7d32;
+}
+
+.review-btn:hover {
+  background: #2e7d32;
+
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding: 70px 15px;
+  }
+
+  .google-rating {
+    width: 100%;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.verified {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 8px 18px;
+  border-radius: 40px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.google-logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+img {
+    width: 100%;
+}
+
+.reviews .google-logo {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+}
+
+.google-logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+}

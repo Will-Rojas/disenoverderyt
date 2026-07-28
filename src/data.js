@@ -1,11 +1,11 @@
 export const siteData = {
   title: "R&T Diseño Verde",
   slogan: "Donde el verde es arte",
-  phone: "+506 7014-5395",
+  phone: "",
   whatsapp:
-    "https://wa.me/50670145395?text=Hola%20R%26T%20Dise%C3%B1o%20Verde%2C%20me%20gustar%C3%ADa%20pedir%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20de%20jardiner%C3%ADa.",
-  email: "info@rtdisenoverde.com",
-  location: "Carrillos Alto de Poás, Alajuela",
+    "",
+  email: "",
+  location: "",
   coverage: "Llegamos a las 7 provincias",
 
   stats: [
@@ -180,3 +180,15 @@ export const siteData = {
     },
   ],
 };
+
+export const reviews = [
+
+    {
+        id:1,
+        author:"Raul",
+        rating:5,
+        text:"Excelente servicio, el jardín quedó espectacular.",
+        time:"Hace 2 semanas"
+    }
+
+];

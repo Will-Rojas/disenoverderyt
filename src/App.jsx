@@ -21,6 +21,7 @@ import { trackWhatsAppClick, trackFormSubmit } from "./utils/google-ads";
 import ProjectFilters from "./components/ProjectFilters";
 import ProjectCard from "./components/ProjectCard";
 import ProjectComparisonSlider from "./components/ProjectComparisonSlider";
+import Reviews from "./components/Reviews";
 
 // --- Mapeo de Iconos para Servicios (Fuera del render para evitar recreación) ---
 const icons = {
@@ -645,6 +646,7 @@ const App = () => {
         </div>
       </section>
 
+      <Reviews />
       {/* Contacto */}
       <section id="contacto">
         <div className="container" style={{ maxWidth: "1100px" }}>
@@ -655,6 +657,7 @@ const App = () => {
               gap: "80px",
             }}
           >
+            
             <div className="reveal">
               <h2 style={{ fontSize: "3.5rem", marginBottom: "25px" }}>
                 Solicite su Cotización
@@ -707,6 +710,7 @@ const App = () => {
               </a>
             </div>
 
+                
             <div
               className="reveal delay-2"
               style={{
