@@ -163,9 +163,6 @@
     object-fit: contain;
 }
 
-img {
-    width: 100%;
-}
 
 .reviews .google-logo {
     width: 120px;
@@ -173,8 +170,3 @@ img {
     height: auto;
 }
 
-.google-logo {
-    width: 90px;
-    height: auto;
-    margin-bottom: 15px;
-}
