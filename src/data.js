@@ -189,6 +189,13 @@ export const reviews = [
         rating:5,
         text:"Seriedad y responsabilidad En todos los trabajos",
         time:"Hace 4 meses"
+    },
+    {
+        id:2,
+        author:"Ronald Hernandez",
+        rating:5,
+        text:"Profesionalismo en sus trabajos, realmente saben lo que hacen.",
+        time:"Hace poco"
     }
 
 ];
