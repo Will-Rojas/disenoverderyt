@@ -35,7 +35,7 @@ const Reviews = () => {
 
           <p>
             Basado en 
-            <strong> {reviewData.totalReviews} </strong>
+            <strong> 2 </strong>
              reseñas verificadas
           </p>
         </div>
