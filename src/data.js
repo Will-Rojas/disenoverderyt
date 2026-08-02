@@ -188,7 +188,7 @@ export const reviews = [
         author:"Raul Paho",
         rating:5,
         text:"Seriedad y responsabilidad En todos los trabajos",
-        time:"Hace 2 semanas"
+        time:"Hace 4 meses"
     }
 
 ];
