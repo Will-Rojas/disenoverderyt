@@ -185,9 +185,9 @@ export const reviews = [
 
     {
         id:1,
-        author:"Raul",
+        author:"Raul Paho",
         rating:5,
-        text:"Excelente servicio, el jardín quedó espectacular.",
+        text:"Seriedad y responsabilidad En todos los trabajos",
         time:"Hace 2 semanas"
     }
 
